@@ -36,13 +36,14 @@ L'organisation respecte les standards de développement logiciel :
 1️⃣ Via Docker (Méthode recommandée)
 Utilisez ces deux commandes pour lancer l'API instantanément :
 
-Bash
 
 # Construction de l'image
 docker build -t equip-api .
 
-# Lancement du container
+# Lancement du container 
+
 docker run -p 8000:8000 equip-api
+
 2️⃣ Test de l'API
 Une fois lancé, ouvrez votre navigateur à l'adresse suivante : 👉 http://localhost:8000/docs
 
