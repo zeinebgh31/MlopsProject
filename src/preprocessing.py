@@ -13,23 +13,22 @@ def clean_title(text):
     if not text:
         return ""
     
-    # 1. Supprimer les tags de langue (ex: "@en")
+    
     text = re.sub(r'@\w+', '', text)
     
-    # 2. Supprimer les caractères spéciaux spécifiques et la ponctuation bruyante
-    # On garde les tirets car ils sont souvent importants dans les modèles techniques
+
     text = re.sub(r'[|":]', ' ', text)
     
-    # 3. Mise en minuscule
+    
     text = text.lower()
     
-    # 4. Nettoyage des espaces multiples
+    
     text = " ".join(text.split())
     
     return text
 
-# Configuration des fichiers
-input_file_path = "C:/Users/msi/Downloads/offers_corpus_english_v2_non_norm.json/translatedOffers_englishV2"  # Remplacez par le nom exact de votre fichier
+
+input_file_path = "C:/Users/msi/Downloads/offers_corpus_english_v2_non_norm.json/translatedOffers_englishV2"  
 output_file_path = "catalogue_nettoye_10k.csv"
 max_lines = 10000
 
@@ -59,7 +58,7 @@ try:
     # Sauvegarder dans un fichier CSV léger pour le groupe
     with open(output_file_path, 'w', newline='', encoding='utf-8') as f_out:
         writer = csv.writer(f_out)
-        writer.writerow(["designation"]) # En-tête
+        writer.writerow(["designation"]) 
         for row in results:
             writer.writerow([row])
 
