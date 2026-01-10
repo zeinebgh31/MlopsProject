@@ -1,0 +1,18 @@
+# Serveur API
+fastapi
+uvicorn
+
+# Traitement de données
+pandas
+numpy
+
+# Moteurs de recherche
+faiss-cpu
+sentence-transformers
+rank_bm25
+
+# Visualisation (pour exploration.ipynb)
+matplotlib
+seaborn
+wordcloud
+scikit-learn

@@ -1,0 +1,5 @@
+Metric,Value
+Recall@1,88.0
+Recall@5,92.0
+MRR,0.9
+Latency_ms,18.77528667449951
